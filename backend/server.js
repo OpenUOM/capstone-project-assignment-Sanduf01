@@ -113,7 +113,7 @@ app.post("/addStudent", async function (req, res) {
   res.end(JSON.stringify(data));
 });
 
-app.post("/deleteStudent", async function (req, res) {
+app.delete("/deleteStudent", async function (req, res) {
   let reqBody = req.body;
   console.log(
     "Request received to delete student. Req body: " + JSON.stringify(reqBody)
