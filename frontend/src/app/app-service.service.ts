@@ -42,7 +42,7 @@ export class AppServiceService {
   }
 
   deleteTeacher(payload: Object){
-    return this.http.post(`/${this.ROOT_URL}/deleteTeacher`, payload)
+    return this.http.delete(`/${this.ROOT_URL}/deleteTeacher`, payload)
   }
 
   editTeacher(payload: Object){

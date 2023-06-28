@@ -77,10 +77,10 @@ describe("Teacher Endpoints", () => {
     });
   });
 
-  it("POST /deleteTeacher should delete a teacher", async () => {
+  it("DELETE /deleteTeacher should delete a teacher", async () => {
 
     // delete Student
-    await requestWithSupertest.post("/deleteTeacher").send({
+    await requestWithSupertest.delete("/deleteTeacher").send({
       "id": 10003
     });
 

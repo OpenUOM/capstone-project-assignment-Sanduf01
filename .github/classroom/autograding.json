@@ -33,7 +33,7 @@
     {
       "name": "Backend Delete Teacher",
       "setup": "npm install",
-      "run": "npm test -- -t \"POST /deleteTeacher should delete a teacher\"",
+      "run": "npm test -- -t \"DELETE /deleteTeacher should delete a student\"",
       "input": "",
       "output": "",
       "comparison": "included",
