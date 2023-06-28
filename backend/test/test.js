@@ -187,8 +187,6 @@ describe("Student Endpoints", () => {
     expect(res.status).toEqual(200);
     let body = res.body;
 
-    expect(body.length).toBe(3)
-
     body.forEach(element => {
       expect(element).toHaveProperty('age');
       expect(element).toHaveProperty('name');
@@ -196,7 +194,7 @@ describe("Student Endpoints", () => {
       expect(element).toHaveProperty('hometown');
     });
 
-
+    expect(body.length).toBe(2)
 
     expect(body).toContainEqual({
       "id": 20001,
