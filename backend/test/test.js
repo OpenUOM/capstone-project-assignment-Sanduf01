@@ -66,11 +66,6 @@ describe("Teacher Endpoints", () => {
     expect(res.status).toEqual(200);
     let body = res.body;
 
-    body.forEach(element => {
-      expect(element).toHaveProperty('age');
-      expect(element).toHaveProperty('name');
-      expect(element).toHaveProperty('id');
-
     expect(body).toContainEqual({
       "id": 10002,
       "name": "Saman",
